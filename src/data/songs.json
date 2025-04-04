@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Blinding Lights",
+    "artistName": "The Weeknd",
+    "thumbnail": "https://lastfm.freetls.fastly.net/i/u/avatar170s/9ea11d9742ba664c4562896c34fa39d2",
+    "musicUrl": "https://www.oyedjsurendra.com/files/download/id/7828",
+    "duration": 203
+  },
+  {
+    "id": 2,
+    "title": "Baby",
+    "artistName": "Justin Bieber",
+    "thumbnail": "https://lastfm.freetls.fastly.net/i/u/avatar170s/52d415566988332728c1c0c7fcc8c26d",
+    "musicUrl": "https://v1.pendujatt.com.se/files/563951.mp3",
+    "duration": 215
+  },
+  {
+    "id": 3,
+    "title": "Lonely",
+    "artistName": "Akon",
+    "thumbnail": "https://lastfm.freetls.fastly.net/i/u/avatar170s/fd51582ec5ca4265a17b1d588bb4862a",
+    "musicUrl": "https://v1.pendujatt.com.se/files/563966.mp3",
+    "duration": 138
+  },
+  {
+    "id": 4,
+    "title": "Chammak Challo",
+    "artistName": "Akon, Hamsika Iyer",
+    "thumbnail": "https://lastfm.freetls.fastly.net/i/u/avatar170s/fd51582ec5ca4265a17b1d588bb4862a",
+    "musicUrl": "https://v1.pendujatt.com.se/files/126243.mp3",
+    "duration": 178
+  },
+  {
+    "id": 5,
+    "title": "Hawayein",
+    "artistName": "Pritam, Arijit Singh",
+    "thumbnail": "https://lastfm.freetls.fastly.net/i/u/avatar170s/39862a5c311b4de3cda30fddcea32ac9",
+    "musicUrl": "https://v1.pendujatt.com.se/files/84178.mp3",
+    "duration": 203
+  }
+]

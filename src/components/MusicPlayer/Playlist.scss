@@ -1,0 +1,91 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.playlist-container {
+  padding: 1rem;
+}
+
+.playlist {
+  background-color: transparent;
+  border: none;
+}
+
+.playlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-secondary;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  @include transition();
+
+  &:hover {
+    background-color: lighten($bg-secondary, 5%);
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .song-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    .song-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      margin-right: 1rem;
+      object-fit: cover;
+    }
+
+    .song-details {
+      flex: 1;
+      
+      .song-title {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      .song-artist {
+        margin: 0;
+        font-size: 0.8rem;
+        color: $text-secondary;
+      }
+
+      .song-duration {
+        margin: 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .song-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .action-btn {
+      background: none;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      @include transition();
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &.favorite-btn {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+

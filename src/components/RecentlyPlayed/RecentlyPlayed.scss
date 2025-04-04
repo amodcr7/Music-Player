@@ -1,0 +1,18 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+
+.recently-played {
+  padding: 20px;
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .empty-message {
+    color: $text-secondary;
+    text-align: center;
+    margin-top: 40px;
+  }
+}

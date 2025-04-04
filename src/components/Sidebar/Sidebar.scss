@@ -1,0 +1,72 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins.scss';
+
+
+.sidebar {
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $bg-secondary;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  @include transition();
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: $primary-color;
+
+    .logo-icon {
+      font-size: 24px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: $text-secondary;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    @include transition();
+
+    &:hover {
+      color: $text-color;
+      background-color: $bg-tertiary;
+    }
+
+    &.active {
+      color: $text-color;
+      background-color: $bg-tertiary;
+    }
+
+    .nav-icon {
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    transform: translateX(-100%);
+    width: 250px;
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+}

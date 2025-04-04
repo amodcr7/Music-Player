@@ -1,0 +1,57 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.header {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: $bg-secondary;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .menu-btn {
+    background: none;
+    border: none;
+    color: $text-color;
+    font-size: 1.2rem;
+    cursor: pointer;
+    @include transition();
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .search-form {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+
+    .search-input-container {
+      position: relative;
+      @include flex-center;
+
+      .search-icon {
+        position: absolute;
+        left: 1rem;
+        color: $text-secondary;
+      }
+
+      .search-input {
+        width: 100%;
+        padding: 0.5rem 1rem 0.5rem 2.5rem;
+        background: $bg-tertiary;
+        border: none;
+        border-radius: 20px;
+        color: $text-color;
+        @include transition();
+
+        &:focus {
+          outline: none;
+          background: darken($bg-tertiary, 5%);
+        }
+      }
+    }
+  }
+}
